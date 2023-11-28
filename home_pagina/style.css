@@ -14,3 +14,25 @@
     margin-top: 100px;
     gap: 100px;
 }
+.flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow-icons {
+    position: absolute;
+    display: none;
+  }
+
+  .flex:hover .arrow-icons {
+    display: flex;
+  }
+
+  .arrow-icons:first-child {
+    left: 0;
+  }
+
+  .arrow-icons:last-child {
+    right: 0;
+  }
