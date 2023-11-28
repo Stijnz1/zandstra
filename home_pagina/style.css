@@ -22,11 +22,12 @@
 
   .arrow-icons {
     position: absolute;
-    display: none;
+    opacity: 0;
+    transition: opacity 1s ease; 
   }
 
   .flex:hover .arrow-icons {
-    display: flex;
+    opacity: 1; 
   }
 
   .arrow-icons:first-child {
