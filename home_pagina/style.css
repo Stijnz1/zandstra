@@ -1,0 +1,53 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.tekst {
+      margin-top: 100px;
+      margin-right: 500px;
+}
+.foto {
+    margin-top: 100px;
+    gap: 100px;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #666;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6600;
+}
+.grijs {
+    background-color: #666;
+}
