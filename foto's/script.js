@@ -1,14 +1,33 @@
-document.querySelectorAll('.grid img').forEach(function (image) {
+let currentIndex = 0;
+const images = document.querySelectorAll('.grid img');
+const modalImage = document.getElementById('modalImage');
+
+images.forEach(function (image, index) {
     image.addEventListener('click', function () {
-        const imageUrl = image.getAttribute('src');
-        openModal(imageUrl);
+        currentIndex = index;
+        updateModal();
+        openModal();
     });
 });
 
-function openModal(imageSrc) {
+function updateModal() {
+    const imageUrl = images[currentIndex].getAttribute('src');
+    modalImage.innerHTML = `<img class="max-w-full max-h-full" src="${imageUrl}" alt="Enlarged Image">`;
+}
+
+function navigate(offset) {
+    currentIndex += offset;
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+
+    updateModal();
+}
+
+function openModal() {
     const modal = document.getElementById('imageModal');
-    const modalContent = document.getElementById('modalContent');
-    modalContent.innerHTML = `<img class="max-w-full max-h-full" src="${imageSrc}" alt="Enlarged Image">`;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 
@@ -18,6 +37,7 @@ function openModal(imageSrc) {
         }
     });
 }
+
 function closeModal() {
     const modal = document.getElementById('imageModal');
     modal.style.opacity = 0;
