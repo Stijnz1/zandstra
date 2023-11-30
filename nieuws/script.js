@@ -13,6 +13,10 @@ function openModal(imageSrc) {
 }
 function closeModal() {
     const modal = document.getElementById('imageModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    modal.style.opacity = 0;
+    setTimeout(() => {
+        modal.style.display = 'none';
+        modal.style.opacity = 1;
+        document.body.style.overflow = 'auto';
+    }, 500);
 }

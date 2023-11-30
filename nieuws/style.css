@@ -17,7 +17,9 @@
     display: none;
     justify-content: center;
     align-items: center;
+    transition: opacity 1s ease;
   }
+
 
   #modalContent {
     max-width: 40vw;
