@@ -1,7 +1,7 @@
 
 @keyframes fallFromSky {
     0% {
-      transform: translateY(-100%);
+      transform: translateY(-120%);
       opacity: 0;
     }
     100% {
@@ -11,5 +11,20 @@
   }
 
 .falling-div {
-    animation: fallFromSky 1.3s ease-out;
+    animation: fallFromSky 1.4s ease-out;
+  }
+  #imageModal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modalContent {
+    max-width: 40vw;
+    max-height: 80vh;
+  }
+
+  #modalContent img {
+    width: 100%;
+    height: 100%;
   }
