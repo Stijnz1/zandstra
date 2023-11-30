@@ -1,0 +1,15 @@
+
+@keyframes fallFromSky {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.falling-div {
+    animation: fallFromSky 1.3s ease-out;
+  }
