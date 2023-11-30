@@ -1,3 +1,10 @@
+document.querySelectorAll('img').forEach(function (image) {
+    image.addEventListener('click', function () {
+        const imageUrl = image.getAttribute('src');
+        openModal(imageUrl);
+    });
+});
+
 function openModal(imageSrc) {
     const modal = document.getElementById('imageModal');
     const modalContent = document.getElementById('modalContent');
