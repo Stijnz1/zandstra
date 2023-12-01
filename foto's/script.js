@@ -12,7 +12,7 @@ images.forEach(function (image, index) {
 
 function updateModal() {
     const imageUrl = images[currentIndex].getAttribute('src');
-    modalImage.innerHTML = `<img class="max-w-full max-h-full" src="${imageUrl}" alt="Enlarged Image">`;
+    modalImage.innerHTML = `<img class="max-w-full max-h-full" src="${imageUrl}">`;
 }
 
 function navigate(offset) {

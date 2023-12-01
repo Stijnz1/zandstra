@@ -1,4 +1,4 @@
-document.querySelectorAll('img').forEach(function (image) {
+document.querySelectorAll('.modal-trigger').forEach(function (image) {
     image.addEventListener('click', function () {
         const imageUrl = image.getAttribute('src');
         openModal(imageUrl);
