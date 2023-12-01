@@ -47,3 +47,16 @@ function closeModal() {
         document.body.style.overflow = 'auto';
     }, 500);
 }
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
+        navigate(1);
+    } else if (event.key === 'ArrowLeft') {
+        navigate(-1);
+    }
+});
+document.getElementById("modal-prev").addEventListener('click', () => {
+    navigate(-1);
+});
+document.getElementById("modal-next").addEventListener('click', () => {
+    navigate(1);
+});
