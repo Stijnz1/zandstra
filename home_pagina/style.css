@@ -1,5 +1,3 @@
-
-
 .flex {
     position: relative;
     display: flex;
@@ -23,3 +21,34 @@
   .arrow-icons:last-child {
     right: 0;
   }
+
+  @keyframes fallFromSky {
+    0% {
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+.flex-col {
+    animation: fallFromSky 1s ease-out;
+  }
+
+  @keyframes fromside {
+    0% {
+      left: -10%;
+      opacity: 0;
+    }
+    100% {
+      left: 0%;
+      opacity: 1;
+    }
+  }
+  
+  .foto {
+    position: relative; 
+    animation: fromside 1s linear;
+  }
+  
