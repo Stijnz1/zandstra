@@ -1,3 +1,12 @@
-document.getElementById("pijl").addEventListener("click", () => {
-    document.getElementById("foto").src = "https://www.zandstrabv.nl/wp-content/uploads/2017/03/08.jpg";
+const arrowIcons = document.querySelectorAll(".arrow-icons");
+
+arrowIcons.forEach((arrowIcon) => {
+    arrowIcon.addEventListener("click", () => {
+        const hiddenDivs = document.querySelectorAll(".hidden");
+        if (hiddenDivs.length > 0) {
+            const nextDiv = hiddenDivs[0];
+            nextDiv.classList.remove("hidden");
+            arrowIcon.closest("div").classList.add("hidden");
+        }
+    });
 });
