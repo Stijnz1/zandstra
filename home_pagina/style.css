@@ -1,9 +1,3 @@
-.flex {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
   .arrow-icons {
     position: absolute;
     opacity: 0;
@@ -22,9 +16,9 @@
     right: 0;
   }
 
-  @keyframes fallFromSky {
+  @keyframes frombottem {
     0% {
-      transform: translateY(200%);
+      transform: translateY(300%);
       opacity: 0;
     }
     100% {
@@ -32,13 +26,14 @@
       opacity: 1;
     }
   }
-.flex-col {
-    animation: fallFromSky 1s ease-out;
+
+  .flex-col {
+    animation: frombottem 1s ease-out;
   }
 
   @keyframes fromside {
     0% {
-      left: -10%;
+      left: -20%;
       opacity: 0;
     }
     100% {
