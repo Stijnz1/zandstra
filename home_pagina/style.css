@@ -18,7 +18,7 @@
 
   @keyframes frombottem {
     0% {
-      transform: translateY(300%);
+      transform: translateY(250%);
       opacity: 0;
     }
     100% {
@@ -27,7 +27,7 @@
     }
   }
 
-  .flex-col {
+  .tekst {
     animation: frombottem 1s ease-out;
   }
 
@@ -46,4 +46,14 @@
     position: relative; 
     animation: fromside 1s linear;
   }
-  
+  @keyframes vadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fotos {
+    animation: vadein 1s ease-in;
+  }
