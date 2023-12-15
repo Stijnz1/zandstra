@@ -26,62 +26,63 @@
             </div>
         </div>
     </nav>
-    <div id="1" class="flex flex-row items-center justify-around bg-gray-500 text-gray-300">
-        <span class="arrow-icons  text-5xl ml-8 cursor-pointer">&lt;</span>
-        <img class="foto max-w-full rounded-lg my-8 w-96" id="foto"
+    <div id="1" class="flex flex-col sm:flex-row items-center justify-around bg-gray-500 text-gray-300">
+        <span class="arrow-icons text-5xl sm:ml-8 sm:mr-0 cursor-pointer">&lt;</span>
+        <img class="foto max-w-full rounded-lg my-8 sm:w-96 order-2 sm:order-1" id="foto"
             src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/07-400x284.jpg" alt="foto">
-        <div class="tekst flex flex-col">
+        <div class="tekst flex flex-col sm:order-3 mt-4">
             <h1 class="text-white text-4xl">Zandstra BV</h1>
             <p>verhuur grondverzet machines</p>
         </div>
-        <span class="arrow-icons text-5xl mr-8 cursor-pointer">&gt;</span>
+        <span class="arrow-icons text-5xl sm:ml-0 sm:mr-8 cursor-pointer order-1 sm:order-2">&gt;</span>
     </div>
-    <div id="2" class="flex flex-row items-center justify-around bg-gray-500 text-gray-300 hidden">
-        <span class="arrow-icons  text-5xl ml-8 cursor-pointer">&lt;</span>
-        <img class="foto max-w-full rounded-lg my-8 w-96" id="foto2"
-            src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/05.jpg" alt="foto">
-        <div class="tekst flex flex-col">
+    <div id="2" class="flex flex-col sm:flex-row items-center justify-around bg-gray-500 text-gray-300 hidden">
+        <span class="arrow-icons text-5xl sm:ml-8 sm:mr-0 cursor-pointer">&lt;</span>
+        <div class="tekst flex flex-col sm:order-3 mt-4">
             <h1 class="text-white text-4xl">Veelzijdig in verhuur</h1>
             <p>snel en accuraat</p>
         </div>
-        <span class="arrow-icons text-5xl mr-8 cursor-pointer">&gt;</span>
+        <img class="foto h-auto sm:w-96 rounded-lg my-8 sm:order-1 object-cover" id="foto2"
+            src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/05.jpg" alt="foto">
+        <span class="arrow-icons text-5xl sm:ml-0 sm:mr-8 cursor-pointer order-1 sm:order-2">&gt;</span>
     </div>
-    <div class="flex flex-row mx-36 gap-12 mb-20">
-        <div class="mt-20">
-           <h1 class="text-gray-600 font-bold"> Ons bedrijf</h1>
-        <p class="my-6">
-            Zandstra BV is gevestigd in Amsterdam en gespecialiseerd in de verhuur van grondverzetmachines ten behoeve
-            van de grond-, weg- en waterbouw.
-        </p>
-        <p class="mb-6">
-            Het werkgebied van Zandstra BV richt zich voornamelijk op Noord- en Zuid Holland, maar wij zijn
-            hoofdzakelijk rondom Amsterdam en Waterland aan het werk.
-        </p>
-        <p class="mb-6">
-            Het machinepark van Zandstra BV bestaat o.a. uit mini- en midigravers, mobiele graafmachines, waaronder een
-            aantal Doosan machines, zwenkladers en knijperauto’s.
-        </p>
-        <p class="mb-6">
-            Gerrit Zandstra de grondlegger van Zandstra BV geniet inmiddels al varend van zijn pensioen en is op de
-            achtergrond nog aanwezig voor advies. Het bedrijf is overgenomen door zijn zoons Marco en Richard, welke de
-            dagelijkse leiding in handen hebben en hun eigen koers varen.
-        </p>
-        <p>
-            Gerrit blijft als kompas van het bedrijf fungeren en navigeert vanaf het water indien nodig met de jongens
-            mee.
-        </p>
+    <div class="flex flex-row gap-8 mx-4 md:mx-36 mb-8 md:mb-20">
+        <div class="md:mt-20">
+            <h1 class="text-gray-600 font-bold text-2xl md:text-4xl">Ons bedrijf</h1>
+            <p class="my-4 md:my-6">
+                Zandstra BV is gevestigd in Amsterdam en gespecialiseerd in de verhuur van grondverzetmachines ten behoeve
+                van de grond-, weg- en waterbouw.
+            </p>
+            <p class="mb-4 md:mb-6">
+                Het werkgebied van Zandstra BV richt zich voornamelijk op Noord- en Zuid-Holland, maar wij zijn
+                hoofdzakelijk rondom Amsterdam en Waterland aan het werk.
+            </p>
+            <p class="mb-4 md:mb-6">
+                Het machinepark van Zandstra BV bestaat o.a. uit mini- en midigravers, mobiele graafmachines, waaronder een
+                aantal Doosan machines, zwenkladers en knijperauto’s.
+            </p>
+            <p class="mb-4 md:mb-6">
+                Gerrit Zandstra de grondlegger van Zandstra BV geniet inmiddels al varend van zijn pensioen en is op de
+                achtergrond nog aanwezig voor advies. Het bedrijf is overgenomen door zijn zoons Marco en Richard, welke de
+                dagelijkse leiding in handen hebben en hun eigen koers varen.
+            </p>
+            <p class="mb-4 md:mb-6">
+                Gerrit blijft als kompas van het bedrijf fungeren en navigeert vanaf het water indien nodig met de jongens
+                mee.
+            </p>
         </div>
-        <div class="fotos flex flex-col gap-8 mt-20"> 
-            <div class="flex flex-row gap-8">
-                <img class="max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/01-1.jpg" alt="">
-                <img class="max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/11.jpg" alt=""> 
+        <div class="fotos flex flex-col gap-4 md:gap-8 mt-4 md:mt-20">
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                <img class="max-w-full mb-4 md:mb-0 md:max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/01-1.jpg" alt="">
+                <img class="max-w-full md:max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2017/03/11.jpg" alt=""> 
             </div>
             <!-- Add a new row of images below -->
-            <div class="flex flex-row gap-8">
-                <img class="max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2020/01/03.jpg" alt="">
-                <img class="max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2020/01/02.jpg" alt=""> 
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                <img class="max-w-full mb-4 md:mb-0 md:max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2020/01/03.jpg" alt="">
+                <img class="max-w-full md:max-w-xs" src="https://www.zandstrabv.nl/wp-content/uploads/2020/01/02.jpg" alt=""> 
             </div>
         </div>
     </div>
+    
 </body>
 </html>
