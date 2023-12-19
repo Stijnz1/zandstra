@@ -1,0 +1,24 @@
+@keyframes vadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .card {
+    animation: vadein 1s ease-in;
+  }
+  @keyframes fallFromSky {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .text {
+    animation: fallFromSky 1s ease-out;
+  }
